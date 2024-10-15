@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="prism/prism.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="app-components/app-header.css">
+    <link rel="stylesheet" href="app-components/app-sidebar.css">
+    <link rel="stylesheet" href="app-components/code-block.css">
+    <link rel="stylesheet" href="styles/action-buttons.css">
+    <link rel="stylesheet" href="styles/color-schemes.css">
+    <link rel="stylesheet" href="styles/color.css">
+    <title>Action Buttons</title>
+</head>
+<body>
+    <script defer src="prism/prism.js"></script>
+    <script defer src="app-components/app-header.js"></script>
+    <script defer src="app-components/app-sidebar.js"></script>
+    <script defer src="app-components/code-block.js"></script>
+    <script defer src="components-code-display/action-buttons/action-button-primary-code.js"></script>
+    <script defer src="components-code-display/action-buttons/action-button-secondary-code.js"></script>
+    <script defer src="components-code-display/action-buttons/action-button-text-code.js"></script>
+    <script defer src="components-code-display/action-buttons/action-button-alert-code.js"></script>
+    <script defer src="components-code-display/action-buttons/action-button-disabled-code.js"></script>
+
+    <app-header></app-header>
+    <app-sidebar id="action-buttons"></app-sidebar>
+
+    <div class="page-content">
+        <a
+        class="css-link"    
+        href="https://github.com/FrancesBrandia/globalColor.git"
+        target="_blank"
+    >
+    <h1 style="text-align: left;">Color</h1>
+        <div class="material-icons open-link-icon">
+            open_in_new
+        </div>
+    </a>
+                <div class="container">
+                    <section>
+                        <h3>Gray</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+                                <p class="color-name">--white</p>
+                                <p class="color-hexa">#FFFFFF</p>
+                                <p class="color-rgb">RGB(255, 255, 255)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F3F3F3;"></div>
+                                <p class="color-name">--gray-100</p>
+                                <p class="color-hexa">#F3F3F3</p>
+                                <p class="color-rgb">RGB(243, 243, 243)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E7E7E7;"></div>
+                                <p class="color-name">--gray-200</p>
+                                <p class="color-hexa">#E7E7E7</p>
+                                <p class="color-rgb">RGB(231, 231, 231)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E0E0E0;"></div>
+                                <p class="color-name">--gray-300</p>
+                                <p class="color-hexa">#E0E0E0</p>
+                                <p class="color-rgb">RGB(224, 224, 224)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #C9C9C9;"></div>
+                                <p class="color-name">--gray-400</p>
+                                <p class="color-hexa">#C9C9C9</p>
+                                <p class="color-rgb">RGB(201, 201, 201)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #B7B7B7;"></div>
+                                <p class="color-name">--gray-500</p>
+                                <p class="color-hexa">#B7B7B7</p>
+                                <p class="color-rgb">RGB(183, 183, 183)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #9F9F9F;"></div>
+                                <p class="color-name">--gray-600</p>
+                                <p class="color-hexa">#9F9F9F</p>
+                                <p class="color-rgb">RGB(159, 159, 159)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #878787;"></div>
+                                <p class="color-name">--gray-700</p>
+                                <p class="color-hexa">#878787</p>
+                                <p class="color-rgb">RGB(135, 135, 135)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #6C6C6C;"></div>
+                                <p class="color-name">--gray-800</p>
+                                <p class="color-hexa">#6C6C6C</p>
+                                <p class="color-rgb">RGB(108, 108, 108)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #444444;"></div>
+                                <p class="color-name">--gray-900</p>
+                                <p class="color-hexa">#444444</p>
+                                <p class="color-rgb">RGB(68, 68, 68)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #363636;"></div>
+                                <p class="color-name">--gray-1000</p>
+                                <p class="color-hexa">#363636</p>
+                                <p class="color-rgb">RGB(54, 54, 54)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #292929;"></div>
+                                <p class="color-name">--black</p>
+                                <p class="color-hexa">#292929</p>
+                                <p class="color-rgb">RGB(0, 0, 0)</p>
+                            </li>
+                        </ul> <!-- End of color-cards list -->
+                    </section>
+                    
+            
+                    <section>
+                        <h3 class="blue">Blue</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #EAF3FF;"></div>
+                                <p class="color-name">--blue-100</p>
+                                <p class="color-hexa">#EAF3FF</p>
+                                <p class="color-rgb">RGB(234, 243, 255)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #D1E1F7;"></div>
+                                <p class="color-name">--blue-200</p>
+                                <p class="color-hexa">#D1E1F7</p>
+                                <p class="color-rgb">RGB(209, 225, 247)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #BFDAFD;"></div>
+                                <p class="color-name">--blue-300</p>
+                                <p class="color-hexa">#BFDAFD</p>
+                                <p class="color-rgb">RGB(191, 218, 253)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #AFCFF9;"></div>
+                                <p class="color-name">--blue-400</p>
+                                <p class="color-hexa">#AFCFF9</p>
+                                <p class="color-rgb">RGB(175, 207, 249)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #97C2FB;"></div>
+                                <p class="color-name">--blue-500</p>
+                                <p class="color-hexa">#97C2FB</p>
+                                <p class="color-rgb">RGB(151, 194, 251)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #80B5FC;"></div>
+                                <p class="color-name">--blue-600</p>
+                                <p class="color-hexa">#80B5FC</p>
+                                <p class="color-rgb">RGB(128, 181, 252)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #7AA4FE;"></div>
+                                <p class="color-name">--blue-700</p>
+                                <p class="color-hexa">#7AA4FE</p>
+                                <p class="color-rgb">RGB(122, 164, 254)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #4E86FD;"></div>
+                                <p class="color-name">--blue-800</p>
+                                <p class="color-hexa">#4E86FD</p>
+                                <p class="color-rgb">RGB(78, 134, 253)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #2268FD;"></div>
+                                <p class="color-name">--blue-900</p>
+                                <p class="color-hexa">#2268FD</p>
+                                <p class="color-rgb">RGB(34, 104, 253)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #1040A7;"></div>
+                                <p class="color-name">--blue-1000</p>
+                                <p class="color-hexa">#1040A7</p>
+                                <p class="color-rgb">RGB(16, 64, 167)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #1B1449;"></div>
+                                <p class="color-name">--blue-1100</p>
+                                <p class="color-hexa">#1B1449</p>
+                                <p class="color-rgb">RGB(27, 20, 73)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #110D2D;"></div>
+                                <p class="color-name">--blue-1200</p>
+                                <p class="color-hexa">#110D2D</p>
+                                <p class="color-rgb">RGB(17, 13, 45)</p>
+                            </li>
+                        </ul> 
+                    </section>
+                    
+                    
+                    <section>
+                        <h3 class="green">Green</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E5FFE5;"></div>
+                                <p class="color-name">--green-100</p>
+                                <p class="color-hexa">#E5FFE5</p>
+                                <p class="color-rgb">RGB(229, 255, 229)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #BFFFC0;"></div>
+                                <p class="color-name">--green-200</p>
+                                <p class="color-hexa">#BFFFC0</p>
+                                <p class="color-rgb">RGB(191, 255, 192)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #B2FFB2;"></div>
+                                <p class="color-name">--green-300</p>
+                                <p class="color-hexa">#B2FFB2</p>
+                                <p class="color-rgb">RGB(178, 255, 178)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #99FF99;"></div>
+                                <p class="color-name">--green-400</p>
+                                <p class="color-hexa">#99FF99</p>
+                                <p class="color-rgb">RGB(153, 255, 153)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #80FF81;"></div>
+                                <p class="color-name">--green-500</p>
+                                <p class="color-hexa">#80FF81</p>
+                                <p class="color-rgb">RGB(128, 255, 129)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #63FF63;"></div>
+                                <p class="color-name">--green-600</p>
+                                <p class="color-hexa">#63FF63</p>
+                                <p class="color-rgb">RGB(99, 255, 99)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #00FF00;"></div>
+                                <p class="color-name">--green-700</p>
+                                <p class="color-hexa">#00FF00</p>
+                                <p class="color-rgb">RGB(0, 255, 0)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #00CC00;"></div>
+                                <p class="color-name">--green-800</p>
+                                <p class="color-hexa">#00CC00</p>
+                                <p class="color-rgb">RGB(0, 204, 0)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #009900;"></div>
+                                <p class="color-name">--green-900</p>
+                                <p class="color-hexa">#009900</p>
+                                <p class="color-rgb">RGB(0, 153, 0)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #006600;"></div>
+                                <p class="color-name">--green-1000</p>
+                                <p class="color-hexa">#006600</p>
+                                <p class="color-rgb">RGB(0, 102, 0)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #004D00;"></div>
+                                <p class="color-name">--green-1100</p>
+                                <p class="color-hexa">#004D00</p>
+                                <p class="color-rgb">RGB(0, 77, 0)</p>
+                            </li>
+                        </ul> 
+                    </section>
+                    
+            
+                    <section>
+                        <h3 class="orange">Orange</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FCFCCE;"></div>
+                                <p class="color-name">--orange-100</p>
+                                <p class="color-hexa">#FCFCCE</p>
+                                <p class="color-rgb">RGB(252, 252, 206)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FFF1BF;"></div>
+                                <p class="color-name">--orange-200</p>
+                                <p class="color-hexa">#FFF1BF</p>
+                                <p class="color-rgb">RGB(255, 241, 191)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FFE599;"></div>
+                                <p class="color-name">--orange-300</p>
+                                <p class="color-hexa">#FFE599</p>
+                                <p class="color-rgb">RGB(255, 229, 153)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FADE7A;"></div>
+                                <p class="color-name">--orange-400</p>
+                                <p class="color-hexa">#FADE7A</p>
+                                <p class="color-rgb">RGB(250, 222, 122)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FACE69;"></div>
+                                <p class="color-name">--orange-500</p>
+                                <p class="color-hexa">#FACE69</p>
+                                <p class="color-rgb">RGB(250, 206, 105)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F9BD37;"></div>
+                                <p class="color-name">--orange-600</p>
+                                <p class="color-hexa">#F9BD37</p>
+                                <p class="color-rgb">RGB(249, 189, 55)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F7AD05;"></div>
+                                <p class="color-name">--orange-700</p>
+                                <p class="color-hexa">#F7AD05</p>
+                                <p class="color-rgb">RGB(247, 173, 5)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #C68A04;"></div>
+                                <p class="color-name">--orange-800</p>
+                                <p class="color-hexa">#C68A04</p>
+                                <p class="color-rgb">RGB(198, 138, 4)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #7C5603;"></div>
+                                <p class="color-name">--orange-900</p>
+                                <p class="color-hexa">#7C5603</p>
+                                <p class="color-rgb">RGB(124, 86, 3)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #634502;"></div>
+                                <p class="color-name">--orange-1000</p>
+                                <p class="color-hexa">#634502</p>
+                                <p class="color-rgb">RGB(99, 69, 2)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #4A3402;"></div>
+                                <p class="color-name">--orange-1100</p>
+                                <p class="color-hexa">#4A3402</p>
+                                <p class="color-rgb">RGB(74, 52, 2)</p>
+                            </li>
+                        </ul> <!-- End of color-cards list -->
+                    </section>
+                    
+                    
+                    <section>
+                        <h3 class="red">Red</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FFECEC;"></div>
+                                <p class="color-name">--red-100</p>
+                                <p class="color-hexa">#FFECEC</p>
+                                <p class="color-rgb">RGB(255, 236, 236)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FFDCDA;"></div>
+                                <p class="color-name">--red-200</p>
+                                <p class="color-hexa">#FFDCDA</p>
+                                <p class="color-rgb">RGB(255, 220, 218)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F6C8C5;"></div>
+                                <p class="color-name">--red-300</p>
+                                <p class="color-hexa">#F6C8C5</p>
+                                <p class="color-rgb">RGB(246, 200, 197)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F5AEA9;"></div>
+                                <p class="color-name">--red-400</p>
+                                <p class="color-hexa">#F5AEA9</p>
+                                <p class="color-rgb">RGB(245, 174, 169)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F48A82;"></div>
+                                <p class="color-name">--red-500</p>
+                                <p class="color-hexa">#F48A82</p>
+                                <p class="color-rgb">RGB(244, 138, 130)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F4675C;"></div>
+                                <p class="color-name">--red-600</p>
+                                <p class="color-hexa">#F4675C</p>
+                                <p class="color-rgb">RGB(244, 103, 92)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F44336;"></div>
+                                <p class="color-name">--red-700</p>
+                                <p class="color-hexa">#F44336</p>
+                                <p class="color-rgb">RGB(244, 67, 54)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #D32F2F;"></div>
+                                <p class="color-name">--red-800</p>
+                                <p class="color-hexa">#D32F2F</p>
+                                <p class="color-rgb">RGB(211, 47, 47)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #B71C1C;"></div>
+                                <p class="color-name">--red-900</p>
+                                <p class="color-hexa">#B71C1C</p>
+                                <p class="color-rgb">RGB(183, 28, 28)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #921616;"></div>
+                                <p class="color-name">--red-1000</p>
+                                <p class="color-hexa">#921616</p>
+                                <p class="color-rgb">RGB(146, 22, 22)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #6E1111;"></div>
+                                <p class="color-name">--red-1100</p>
+                                <p class="color-hexa">#6E1111</p>
+                                <p class="color-rgb">RGB(110, 17, 17)</p>
+                            </li>
+                        </ul> 
+                    </section>
+                    
+                    
+            
+                    <section>
+                        <h3 class="purple">Purple</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #EAF0FF;"></div>
+                                <p class="color-name">--purple-100</p>
+                                <p class="color-hexa">#EAF0FF</p>
+                                <p class="color-rgb">RGB(234, 240, 255)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #CCDAF8;"></div>
+                                <p class="color-name">--purple-200</p>
+                                <p class="color-hexa">#CCDAF8</p>
+                                <p class="color-rgb">RGB(204, 218, 248)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #C5C8FE;"></div>
+                                <p class="color-name">--purple-300</p>
+                                <p class="color-hexa">#C5C8FE</p>
+                                <p class="color-rgb">RGB(197, 200, 254)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #C5B4F8;"></div>
+                                <p class="color-name">--purple-400</p>
+                                <p class="color-hexa">#C5B4F8</p>
+                                <p class="color-rgb">RGB(197, 180, 248)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #B399F6;"></div>
+                                <p class="color-name">--purple-500</p>
+                                <p class="color-hexa">#B399F6</p>
+                                <p class="color-rgb">RGB(179, 153, 246)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #9977F3;"></div>
+                                <p class="color-name">--purple-600</p>
+                                <p class="color-hexa">#9977F3</p>
+                                <p class="color-rgb">RGB(153, 119, 243)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #8055F0;"></div>
+                                <p class="color-name">--purple-700</p>
+                                <p class="color-hexa">#8055F0</p>
+                                <p class="color-rgb">RGB(128, 85, 240)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #6844C5;"></div>
+                                <p class="color-name">--purple-800</p>
+                                <p class="color-hexa">#6844C5</p>
+                                <p class="color-rgb">RGB(104, 68, 197)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #50349B;"></div>
+                                <p class="color-name">--purple-900</p>
+                                <p class="color-hexa">#50349B</p>
+                                <p class="color-rgb">RGB(80, 52, 155)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #392370;"></div>
+                                <p class="color-name">--purple-1000</p>
+                                <p class="color-hexa">#392370</p>
+                                <p class="color-rgb">RGB(57, 35, 112)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #2D1B5B;"></div>
+                                <p class="color-name">--purple-1100</p>
+                                <p class="color-hexa">#2D1B5B</p>
+                                <p class="color-rgb">RGB(45, 27, 91)</p>
+                            </li>
+                        </ul> 
+                    
+                    </section>
+                    <section>
+                        <h3 class="brown">Brown</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F8F1EB;"></div>
+                                <p class="color-name">--brown-100</p>
+                                <p class="color-hexa">#F8F1EB</p>
+                                <p class="color-rgb">RGB(248, 241, 235)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F1E4D7;"></div>
+                                <p class="color-name">--brown-200</p>
+                                <p class="color-hexa">#F1E4D7</p>
+                                <p class="color-rgb">RGB(241, 228, 215)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E9D6C2;"></div>
+                                <p class="color-name">--brown-300</p>
+                                <p class="color-hexa">#E9D6C2</p>
+                                <p class="color-rgb">RGB(233, 214, 194)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E2C9AE;"></div>
+                                <p class="color-name">--brown-400</p>
+                                <p class="color-hexa">#E2C9AE</p>
+                                <p class="color-rgb">RGB(226, 201, 174)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #D4AD86;"></div>
+                                <p class="color-name">--brown-500</p>
+                                <p class="color-hexa">#D4AD86</p>
+                                <p class="color-rgb">RGB(212, 173, 134)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #C5925D;"></div>
+                                <p class="color-name">--brown-600</p>
+                                <p class="color-hexa">#C5925D</p>
+                                <p class="color-rgb">RGB(197, 146, 93)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #AF8969;"></div>
+                                <p class="color-name">--brown-700</p>
+                                <p class="color-hexa">#AF8969</p>
+                                <p class="color-rgb">RGB(175, 137, 105)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #B77735;"></div>
+                                <p class="color-name">--brown-800</p>
+                                <p class="color-hexa">#B77735</p>
+                                <p class="color-rgb">RGB(183, 119, 53)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #925F2A;"></div>
+                                <p class="color-name">--brown-900</p>
+                                <p class="color-hexa">#925F2A</p>
+                                <p class="color-rgb">RGB(146, 95, 42)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #6E4720;"></div>
+                                <p class="color-name">--brown-1000</p>
+                                <p class="color-hexa">#6E4720</p>
+                                <p class="color-rgb">RGB(110, 71, 32)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #493014;"></div>
+                                <p class="color-name">--brown-1100</p>
+                                <p class="color-hexa">#493014</p>
+                                <p class="color-rgb">RGB(73, 48, 20)</p>
+                            </li>
+                        </ul> 
+                    </section>
+                    
+                    
+                    <section>
+                        <h3 class="pink">Pink</h3>
+                        <ul class="color-cards"> 
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #FBEBF4;"></div>
+                                <p class="color-name">--pink-100</p>
+                                <p class="color-hexa">#FBEBF4</p>
+                                <p class="color-rgb">RGB(251, 235, 244)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F6D7EA;"></div>
+                                <p class="color-name">--pink-200</p>
+                                <p class="color-hexa">#F6D7EA</p>
+                                <p class="color-rgb">RGB(246, 215, 234)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #F6BFE1;"></div>
+                                <p class="color-name">--pink-300</p>
+                                <p class="color-hexa">#F6BFE1</p>
+                                <p class="color-rgb">RGB(246, 191, 225)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E99BC9;"></div>
+                                <p class="color-name">--pink-400</p>
+                                <p class="color-hexa">#E99BC9</p>
+                                <p class="color-rgb">RGB(233, 155, 201)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #E97BBC;"></div>
+                                <p class="color-name">--pink-500</p>
+                                <p class="color-hexa">#E97BBC</p>
+                                <p class="color-rgb">RGB(233, 123, 188)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #DC5FA9;"></div>
+                                <p class="color-name">--pink-600</p>
+                                <p class="color-hexa">#DC5FA9</p>
+                                <p class="color-rgb">RGB(220, 95, 169)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #D33794;"></div>
+                                <p class="color-name">--pink-700</p>
+                                <p class="color-hexa">#D33794</p>
+                                <p class="color-rgb">RGB(211, 55, 148)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #A92C76;"></div>
+                                <p class="color-name">--pink-800</p>
+                                <p class="color-hexa">#A92C76</p>
+                                <p class="color-rgb">RGB(169, 44, 118)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #8E1C64;"></div>
+                                <p class="color-name">--pink-900</p>
+                                <p class="color-hexa">#8E1C64</p>
+                                <p class="color-rgb">RGB(142, 28, 100)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #740E4E;"></div>
+                                <p class="color-name">--pink-1000</p>
+                                <p class="color-hexa">#740E4E</p>
+                                <p class="color-rgb">RGB(116, 14, 78)</p>
+                            </li>
+                            <li class="color-card">
+                                <div class="color-swatch" style="background-color: #5D0B3E;"></div>
+                                <p class="color-name">--pink-1100</p>
+                                <p class="color-hexa">#5D0B3E</p>
+                                <p class="color-rgb">RGB(93, 11, 62)</p>
+                            </li>
+                        </ul> 
+                    </section>
+                    
+                    
+                    <section>
+                                <h3 class="teal">Teal</h3>
+                                <ul class="color-cards"> 
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #EAFFFF;"></div>
+                                        <p class="color-name">--teal-100</p>
+                                        <p class="color-hexa">#EAFFFF</p>
+                                        <p class="color-rgb">RGB(234, 255, 255)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #D9FDFD;"></div>
+                                        <p class="color-name">--teal-200</p>
+                                        <p class="color-hexa">#D9FDFD</p>
+                                        <p class="color-rgb">RGB(217, 253, 253)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #BFFEFF;"></div>
+                                        <p class="color-name">--teal-300</p>
+                                        <p class="color-hexa">#BFFEFF</p>
+                                        <p class="color-rgb">RGB(191, 254, 255)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #A0F9FB;"></div>
+                                        <p class="color-name">--teal-400</p>
+                                        <p class="color-hexa">#A0F9FB</p>
+                                        <p class="color-rgb">RGB(160, 249, 251)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #9EE3E2;"></div>
+                                        <p class="color-name">--teal-500</p>
+                                        <p class="color-hexa">#9EE3E2</p>
+                                        <p class="color-rgb">RGB(158, 227, 226)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #8DCCC1;"></div>
+                                        <p class="color-name">--teal-600</p>
+                                        <p class="color-hexa">#8DCCC1</p>
+                                        <p class="color-rgb">RGB(141, 204, 193)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #70BFB1;"></div>
+                                        <p class="color-name">--teal-700</p>
+                                        <p class="color-hexa">#70BFB1</p>
+                                        <p class="color-rgb">RGB(112, 191, 177)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #5A9A8E;"></div>
+                                        <p class="color-name">--teal-800</p>
+                                        <p class="color-hexa">#5A9A8E</p>
+                                        <p class="color-rgb">RGB(90, 154, 142)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #38756C;"></div>
+                                        <p class="color-name">--teal-900</p>
+                                        <p class="color-hexa">#38756C</p>
+                                        <p class="color-rgb">RGB(56, 117, 108)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #386059;"></div>
+                                        <p class="color-name">--teal-1000</p>
+                                        <p class="color-hexa">#386059</p>
+                                        <p class="color-rgb">RGB(56, 96, 89)</p>
+                                    </li>
+                                    <li class="color-card">
+                                        <div class="color-swatch" style="background-color: #274640;"></div>
+                                        <p class="color-name">--teal-1100</p>
+                                        <p class="color-hexa">#274640</p>
+                                        <p class="color-rgb">RGB(39, 70, 64)</p>
+                                    </li>
+                                </ul> 
+                            </section>
+                            
+                        </div> 
+                    </section>
+                
+            
+                    
+                </div>
+            </body>
+            </html>
+            
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>

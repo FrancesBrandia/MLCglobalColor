@@ -1,0 +1,82 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white); 
+    display: flex;
+    flex-direction: column;
+    font-size: 14px; 
+}
+
+.section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.color-cards {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+    gap: 2px; /* Space between cards */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.color-card {
+    background-color: var(--white); 
+    max-width: 150px;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    padding: 7px;
+}
+
+.color-card:hover {
+    transform: translateY(-2px);
+}
+
+.color-swatch {
+    width: 100%; /* Full width for responsive design */
+    height: 78px;
+}
+
+.color-name {
+    font-weight: bold;
+    padding-top: 4px;
+    background-color: var(--white); 
+    margin: 0;
+    color: var(--gray-900);
+}
+
+.color-hexa {
+    color: var(--gray-700);
+    padding-top: 3px;
+    padding-bottom: 1px;
+    margin: 0;
+}
+
+.color-rgb {
+    color: var(--gray-700);
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0; /* Remove margin-top for a tighter layout */
+}
+
+/* Accessibility Improvements */
+.color-card:focus {
+    outline: 2px solid var(--gray-700); /* Focus outline for accessibility */
+}
+
+/* Hover effect for better interactivity */
+.color-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--gray-200);  /* Slight shadow on hover */
+}
